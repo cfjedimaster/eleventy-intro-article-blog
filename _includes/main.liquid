@@ -1,0 +1,28 @@
+---
+title: Default title
+---
+
+<html>
+<head>
+<title>{{ title }}</title>
+<link rel="stylesheet" href="/style/app.css">
+</head>
+
+<body>
+
+	<div class="header">
+	<a href="/">Home</a> ~ <a href="/archives/">Archives</a>
+	</div>
+
+	<div class="content">
+	{{ content }}
+	</div>
+
+	<footer>
+	<p>
+	Created by {{ site.author.name }}, follow them on <a href="https://twitter.com/{{site.author.twitter}}">Twitter</a>.
+	</p>
+	</footer>
+
+</body>
+</html>

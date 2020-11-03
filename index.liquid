@@ -1,0 +1,13 @@
+---
+title: My Super Awesome Cat Blog
+layout: main
+---
+
+<h2>My Super Awesome Cat Blog</h2>
+
+{% assign posts = collections.posts | reverse %}
+{% for post in posts limit:5 %}
+	<p>
+	<a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i>
+	</p>
+{% endfor %}
